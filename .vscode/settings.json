@@ -1,0 +1,6 @@
+{
+    "git.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    }
+}
