@@ -11,6 +11,8 @@ class DioClient {
 
   final baseUrl = "https://reqres.in/api";
 
+//This method will be used to get users info
+
   Future<UserInfo> getUser(String id) async {
     Response userData = await dio.get("$baseUrl/users/$id");
 
@@ -25,6 +27,8 @@ class DioClient {
 
     return user;
   }
+
+  //This method will be used to Create users
 
   Future<UserInfoResponse?> createUser(UserInfoBody userInfoBody) async {
     UserInfoResponse? userInfoResponse;
